@@ -1,0 +1,35 @@
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?page=0&size=3
+
+###
+GET  http://localhost:3000/api/tasks/60d8094f18b8953608bd9e48
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "title":  "Hacer un sitio web en java",
+  "description": "Trabajo freelance",
+  "done": true
+}
+
+###
+
+DELETE  http://localhost:3000/api/tasks/60d80df67b35711b98881932
+
+###
+
+GET http://localhost:3000/api/tasks/done
+
+###
+
+PUT http://localhost:3000/api/tasks/60d8094f18b8953608bd9e48
+Content-Type: application/json
+
+{
+  "title": "Crear un sitio web en Wordpress"
+}
